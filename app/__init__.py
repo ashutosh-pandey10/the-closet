@@ -14,6 +14,9 @@ def create_app():
     from .routes import bp
     app.register_blueprint(bp)
 
+    from auth.authentication import auth
+    app.register_blueprint(auth)
+
     from closet_db import closet_db
     closet_db.init_app(app)
     
