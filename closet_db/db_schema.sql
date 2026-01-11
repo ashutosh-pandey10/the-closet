@@ -40,7 +40,7 @@ CREATE TABLE general_features (
     CHECK (ethnicity IN ('Indian', 'Asian', 'White', 'Black', 'Hispanic')),
   skin_tone INTEGER NOT NULL,
   body_type TEXT NOT NULL
-      CHECK (ethnicity IN ('Lean', 'Stocky', 'Average', 'Athletic', 'XL')),
+      CHECK (body_type IN ('Lean', 'Stocky', 'Average', 'Athletic', 'XL')),
   height DECIMAL NOT NULL, -- In cms
   weighs DECIMAL NOT NULL,
   bmi_index DECIMAL,
