@@ -20,7 +20,7 @@ def search():
             return_data = {
                 "status_code": "200",
                 "message": "Recommendation generated",
-                "items": recommendations["records"]
+                "items": recommendations["Records"]
             }
             return jsonify(return_data)
         except Exception as exc:

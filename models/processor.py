@@ -3,7 +3,7 @@ def get_recommendations(user_data):
     dictionary. Json will have following structure:
         {
             metadata: {},
-            records: [
+            Records: [
                 {
                     link: "link to apparel",
                     ...
